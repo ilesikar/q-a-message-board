@@ -1,5 +1,9 @@
 <h1 id="title">W E L C O M E</h1>
 
+<div class="question-form">
+  {{new-question save="save"}}
+</div>
+
 <ul class="display-box">
   {{#each model as |question|}}
      {{question-tile question=question}}
