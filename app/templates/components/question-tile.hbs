@@ -1,5 +1,13 @@
-<div class="rental-box">
-  <h3>{{question.question}}</h3>
-  <p>{{question.notes}}</p>
-  <p>By {{question.author}}</p>
-</div>
+{{#if areNotesShowing}}
+  <li class="question-box" {{action 'hideNotes'}}>
+    <h2>{{question.question}}</h2>
+    <p> Asked by {{question.author}}</p>
+      <p class="notes">{{question.notes}}</p>
+  </li>
+{{else}}
+  <li class="question-box" {{action 'showNotes'}}>
+    <h2>{{question.question}}</h2>
+    <p> Asked by {{question.author}}</p>
+      <p class="showNotesNotifier">Click to show notes</p>
+  </li>
+{{/if}}

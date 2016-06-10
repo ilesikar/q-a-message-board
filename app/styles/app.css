@@ -1,15 +1,14 @@
-ul .nav-bar {
+ul.nav-bar {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: #333;
-  position: fixed;
+  /*position: fixed;*/
   top: 0;
   width: 100%;
 }
-
-li .nav-bar {
+li.nav-bar {
   float: left;
   display: block;
   color: white;
@@ -17,7 +16,36 @@ li .nav-bar {
   padding: 14px 16px;
   text-decoration: none;
 }
-
 li a:hover {
   background-color: #111;
+}
+ul.display-box {
+  list-style-type: none;
+  padding-left: 0px;
+}
+li.question-box {
+  border-style: solid;
+  border-color: grey;
+  border-radius: 15px;
+  background-color: darkgrey;
+  margin: 10px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+p.showNotesNotifier {
+  font-size: 12px;
+  font-style: italic;
+  font-weight: lighter;
+}
+/*h1 {
+  margin-top: 50px;
+}*/
+p.notes {
+  font-size: 18px;
+}
+.center {
+  text-align: center
+}
+#title {
+  margin-left: 10px;
 }
