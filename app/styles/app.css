@@ -11,9 +11,6 @@ ul .nav-bar {
 
 li .nav-bar {
   float: left;
-}
-
-li a .nav-bar {
   display: block;
   color: white;
   text-align: center;
