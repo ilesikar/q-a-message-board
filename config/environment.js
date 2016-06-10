@@ -1,11 +1,13 @@
-/* jshint node: true */
-
 module.exports = function(environment) {
   var ENV = {
-    modulePrefix: 'super-rentals',
+    firebase: {
+      apiKey: 'AIzaSyAmjOiJdfQp1sQA5WQtHCImrwjUlQm4Ah0',
+      authDomain: 'q-a-message-board.firebaseapp.com',
+      databaseURL: 'https://q-a-message-board.firebaseio.com',
+      storageBucket: 'q-a-message-board.appspot.com',
+    },
+    modulePrefix: 'q-a-message-board',
     environment: environment,
-    contentSecurityPolicy: { 'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com" },
-    firebase: 'https://q-a-message-board.firebaseio.com/',     # This should be your own unique Firebase application link!
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
