@@ -1,0 +1,9 @@
+<h1> Welcome to Ian's Question - Answer Board! </h1>
+
+<ul>
+  {{#each model as |question|}}
+     <h3>{{question.question}}</h3>
+     <p>{{question.notes}}</p>
+     <p>By {{question.author}}</p>
+  {{/each}}
+</ul>
