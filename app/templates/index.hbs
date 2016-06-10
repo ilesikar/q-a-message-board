@@ -5,7 +5,12 @@
 </div>
 
 <ul class="display-box">
-  {{#each model as |question|}}
+  {{#each questions as |question|}}
      {{question-tile question=question update="update"}}
   {{/each}}
+  <ul class="sub-display-box">
+    {{#each answers as |answer|}}
+      <li>{{answer.answer}}</li>
+    {{/each}}
+  </ul>
 </ul>

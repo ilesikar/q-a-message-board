@@ -62,3 +62,6 @@ div.question-form {
 input {
   width: 50%;
 }
+span.post-btn {
+  text-align: right;
+}

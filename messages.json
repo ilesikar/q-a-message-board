@@ -6,5 +6,12 @@
     "question": "How many stars are there in the universe?",
     "author": "Carl Sagan",
     "notes": "How many galaxies?"
+  }],
+  "answers": [{
+    "answer": "Physics",
+    "notes": "Thats how that works"
+  }, {
+    "answer": "Billions of Billions",
+    "notes": "It's a lot"
   }]
 }
