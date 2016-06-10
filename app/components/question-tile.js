@@ -8,6 +8,14 @@ export default Ember.Component.extend({
     },
     hideNotes: function() {
       this.set('areNotesShowing', false);
+    },
+    update(question, params) {
+      this.sendAction('update', question, params);
     }
+    // delete(question) {
+    //   if (confirm('Are you sure you want to delete this question?')) {
+    //     this.sendAction('destroyQuestion', question);
+    //   }
+    // }
   }
 });
