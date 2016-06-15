@@ -8,6 +8,11 @@ export default Ember.Component.extend({
     },
 
     save() {
+      var params = {
+        question: this.get('question'),
+        author: this.get('author'),
+        answer: this.get('answer'),
+      };
       var newAnswer = this.store.createRecord('answer', params);
         var question = params.question;
         question.get('answers').addObject(newAnswer);
