@@ -12,7 +12,12 @@
           {{input value=author id="author"}}
         </div>
 
-        <button {{action 'save1'}}>Save</button>
+        <div class="form-group">
+          <label for="question_id">Question_ID</label>
+          {{input value=question_id id="question_id"}}
+        </div>
+
+        <button {{action 'save'}}>Save</button>
       </form>
     </div>
 {{else}}

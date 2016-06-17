@@ -1,14 +1,7 @@
-{{#if areNotesShowing}}
-  <li class="question-box" {{action 'hideNotes'}}>
-    <p class="author"> Asked by {{question.author}}</p>
+<li class="question-box" {{action 'hideNotes'}}>
+  <p class="author"> Asked by {{question.author}}</p>
+  {{#link-to 'question' question.id}}
     <h2 class="question">{{question.question}}</h2>
-    <p class="notes">{{question.notes}}</p>
-  </li>
-{{else}}
-  <li class="question-box" {{action 'showNotes'}}>
-    <p class="author"> Asked by {{question.author}}</p>
-    <h2 class="question">{{question.question}}</h2>
-    <p class="showNotesNotifier">Click to show notes</p>
-  </li>
-{{/if}}
+  {{/link-to}}
+</li>
 <span class="post-btn">{{update-question question=question update="update"}}</span>

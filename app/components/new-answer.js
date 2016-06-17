@@ -9,17 +9,12 @@ export default Ember.Component.extend({
 
     save() {
       var params = {
-        question: this.get('question'),
         author: this.get('author'),
         answer: this.get('answer'),
+        question_id: this.get('question_id'),
       };
-      var newAnswer = this.store.createRecord('answer', params);
-        var question = params.question;
-        question.get('answers').addObject(newAnswer);
-        newAnswer.save().then(function() {
-          return question.save();
-        });
-        this.transitionTo('question', params.question);
+      this.set('addNewAnswer', false);
+      this.sendAction('save', params);
     }
   }
 });

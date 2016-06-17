@@ -13,7 +13,7 @@ li.nav-bar {
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 10px 12px;
   text-decoration: none;
 }
 li a:hover {
@@ -64,4 +64,21 @@ input {
 }
 span.post-btn {
   text-align: right;
+}
+ul.answer-box {
+  list-style: none;
+  margin-left: -40px;
+}
+p.answer-author {
+  font-style: italic;
+  font-size: .9em;
+}
+p.title {
+  margin-bottom: 0px;
+  font-size: 1.1em;
+  font-weight: bold;
+  text-shadow: 2px 2px 2px black;
+}
+a:hover {
+  text-decoration: none;
 }

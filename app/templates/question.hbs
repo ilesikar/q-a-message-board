@@ -1,2 +1,17 @@
+<h1>{{model.question.question}}</h1>
 
-{{outlet}}
+<p>Asked by {{model.question.author}}</p>
+
+<p>{{model.question.notes}}</p>
+
+<hr>
+
+{{new-answer save="save" question=model}}
+
+<br>
+
+<ul class="answer-box">
+  {{#each model.answer as |answer|}}
+    {{answer-tile answer=answer}}
+  {{/each}}
+</ul>
