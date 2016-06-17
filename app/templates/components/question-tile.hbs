@@ -4,12 +4,11 @@
     <h2 class="question">{{question.question}}</h2>
     <p class="notes">{{question.notes}}</p>
   </li>
-  {{update-question question=question update="update"}}
 {{else}}
   <li class="question-box" {{action 'showNotes'}}>
     <p class="author"> Asked by {{question.author}}</p>
     <h2 class="question">{{question.question}}</h2>
     <p class="showNotesNotifier">Click to show notes</p>
   </li>
-  <span class="post-btn">{{update-question question=question update="update"}}</span>
 {{/if}}
+<span class="post-btn">{{update-question question=question update="update"}}</span>

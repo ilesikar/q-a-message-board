@@ -1,11 +1,5 @@
 
-  <li class="answer-box" {{action 'hideNotes'}}>
-    <p class="author"> Asked by {{answer.author}}</p>
-    <h2 class="answer">{{answer.answer}}</h2>
-  </li>
-  {{update-answer answer=answer update="update"}}
-  <li class="answer-box" {{action 'showNotes'}}>
-    <p class="author"> Asked by {{answer.author}}</p>
-    <h2 class="answer">{{answer.answer}}</h2>
-  </li>
-  <span class="post-btn">{{update-answer answer=answer update="update"}}</span>
+<li class="answer-box">
+  <p>{{answer.author}} says:</p>
+  <p class="answer">{{answer.answer}}</p>
+</li>

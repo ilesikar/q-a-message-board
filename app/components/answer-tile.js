@@ -3,18 +3,12 @@ import Ember from 'ember';
 export default Ember.Component.extend({
   areNotesShowing: false,
   actions: {
-    showNotes: function() {
-      this.set('areNotesShowing', true);
-    },
-    hideNotes: function() {
-      this.set('areNotesShowing', false);
-    },
-    update(question, params) {
-      this.sendAction('update', question, params);
+    update(answer, params) {
+      this.sendAction('update', answer, params);
     }
-    // delete(question) {
-    //   if (confirm('Are you sure you want to delete this question?')) {
-    //     this.sendAction('destroyQuestion', question);
+    // delete(answer) {
+    //   if (confirm('Are you sure you want to delete this answer?')) {
+    //     this.sendAction('destroyQuestion', answer);
     //   }
     // }
   }

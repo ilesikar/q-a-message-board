@@ -17,11 +17,11 @@
 
   "answers": [{
     "answer": "Physics",
-    "notes": "Thats how that works",
+    "author": "Carl Sagan",
     "question_id": 0
   }, {
     "answer": "Billions of Billions",
-    "notes": "It is a lot",
+    "author": "Neil DeGrasse Tyson",
     "question_id": 1
   }]
 }
