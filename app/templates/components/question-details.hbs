@@ -1,0 +1,11 @@
+{{question.question}} {{question.author}} {{question.notes}}
+<br>
+<!-- <p><img src={{answer.image}} alt={{answer.type}}></p> -->
+
+<ul>
+  {{#each question.answers as |answer|}}
+    <li>{{answer.author}} says: {{answer.answer}}</li>
+  {{/each}}
+</ul>
+
+<button {{action 'delete' answer}}>Delete</button>

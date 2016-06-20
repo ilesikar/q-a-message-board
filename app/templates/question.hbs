@@ -1,17 +1,17 @@
-<h1>{{model.question.question}}</h1>
+<h1>{{model.question}}</h1>
 
-<p>Asked by {{model.question.author}}</p>
+<p>Asked by {{model.author}}</p>
 
-<p>{{model.question.notes}}</p>
+<p>{{model.notes}}</p>
 
 <hr>
 
-{{new-answer save="save" question=model}}
-
-<br>
+{{new-answer saveAnswer="saveAnswer" question=model}}
 
 <ul class="answer-box">
-  {{#each model.answer as |answer|}}
-    {{answer-tile answer=answer}}
+  {{#each model.answers as |answer|}}
+    <hr>
+    <p>{{answer.author}} says</p>
+    <p>{{answer.answer}}</p>
   {{/each}}
 </ul>

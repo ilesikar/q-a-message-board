@@ -10,18 +10,18 @@
   "answers": [{
     "answer": "Physics",
     "author": "Physics_Guy",
-    "question_id": 0
+    "question": "Why is the sky blue?"
   }, {
     "answer": "Billions of Billions",
     "author": "Batman",
-    "question_id": 1
+    "question": "How many stars are there in the universe?"
   }, {
-    "answer": "Physics",
+    "answer": "Refraction",
     "author": "Carl Sagan",
-    "question_id": 0
+    "question": "Why is the sky blue?"
   }, {
     "answer": "Billions of Billions",
     "author": "Neil DeGrasse Tyson",
-    "question_id": 1
+    "question": "How many stars are there in the universe?"
   }]
 }
