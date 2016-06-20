@@ -1,6 +1,6 @@
 <h1>{{model.question}}</h1>
 
-<p>Asked by {{model.author}}</p>
+<p><i>Asked by {{model.author}}</i></p>
 
 <p>{{model.notes}}</p>
 
@@ -11,7 +11,7 @@
 <ul class="answer-box">
   {{#each model.answers as |answer|}}
     <hr>
-    <p>{{answer.author}} says</p>
+    <p><i>{{answer.author}} says</i></p>
     <p>{{answer.answer}}</p>
   {{/each}}
 </ul>

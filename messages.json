@@ -8,20 +8,12 @@
     "notes": "How many galaxies?"
   }],
   "answers": [{
-    "answer": "Physics",
-    "author": "Physics_Guy",
-    "question": "Why is the sky blue?"
-  }, {
-    "answer": "Billions of Billions",
-    "author": "Batman",
-    "question": "How many stars are there in the universe?"
-  }, {
     "answer": "Refraction",
     "author": "Carl Sagan",
-    "question": "Why is the sky blue?"
+    "question": 0
   }, {
     "answer": "Billions of Billions",
     "author": "Neil DeGrasse Tyson",
-    "question": "How many stars are there in the universe?"
+    "question": 1
   }]
 }
