@@ -3,6 +3,7 @@
   {{#link-to 'question' question.id}}
     <h2 class="question">{{question.question}}</h2>
   {{/link-to}}
+  <p class="question-time">{{question.timeStamp}}</p>
   <p>{{timesAnswered}}</p>
 </li>
 <span class="post-btn">{{update-question question=question update="update"}}</span>

@@ -3,15 +3,15 @@ import Ember from 'ember';
 export default Ember.Component.extend({
   areNotesShowing: false,
   timesAnswered: Ember.computed('question.answers', function() {
-		var answerCount = this.get('question.answers.length');
-		if (answerCount === 0) {
-			return "This question has no answers yet.";
+    var answerCount = this.get('question.answers.length');
+    if (answerCount === 0) {
+      return "This question has no answers yet.";
     } else if (answerCount === 1) {
-      return "This question has one answer."
-		} else {
-			return "This question has " + answerCount + " answers";
-		}
-	}),
+      return "This question has one answer.";
+    } else {
+      return "This question has " + answerCount + " answers";
+    }
+  }),
   actions: {
     showNotes: function() {
       this.set('areNotesShowing', true);

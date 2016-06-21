@@ -1,6 +1,6 @@
 import { moduleFor, test } from 'ember-qunit';
 
-moduleFor('service:current', 'Unit | Service | current', {
+moduleFor('service:current-user', 'Unit | Service | current-user', {
   // Specify the other units that are required for this test.
   // needs: ['service:foo']
 });
