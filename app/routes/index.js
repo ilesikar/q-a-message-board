@@ -23,11 +23,10 @@ export default Ember.Route.extend({
         });
         question.save();
         this.transitionTo('index');
-      }
+      },
 
-      // destroyQuestion(question) {
-      //   question.destroyRecord();
-      //   this.transitionTo('index');
-      // }
+      login() {
+        this.get('currentUser').login('testUser');
+      }
     }
 });

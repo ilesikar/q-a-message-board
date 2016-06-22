@@ -8,6 +8,6 @@
 
 <ul class="answer-box">
   {{#each model.answers as |answer|}}
-    <li>{{answer-tile answer=model}}{{timeFormat answer}}</li>
+    <li>{{answer-tile answer=answer}}{{time-format answer.timeStamp}}</li>
   {{/each}}
 </ul>

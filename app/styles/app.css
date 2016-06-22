@@ -82,3 +82,9 @@ p.title {
 a:hover {
   text-decoration: none;
 }
+li.login-btn {
+  float:right;
+}
+li.user-name {
+  float:right;
+}
