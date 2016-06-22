@@ -5,5 +5,5 @@ export default DS.Model.extend({
   author: DS.attr(),
   notes: DS.attr(),
   answers: DS.hasMany('answer', { asunc: true }),
-  timeStamp: DS.attr(),
+  timeStamp: DS.attr()
 });

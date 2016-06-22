@@ -8,9 +8,6 @@
 
 <ul class="answer-box">
   {{#each model.answers as |answer|}}
-    <hr>
-    <p><i>{{answer.author}} says</i></p>
-    <p>{{answer.answer}}</p>
-    <p>{{timeStamp answer}}</p>
+    <li>{{answer-tile answer=model}}{{timeFormat answer}}</li>
   {{/each}}
 </ul>
